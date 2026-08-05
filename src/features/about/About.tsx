@@ -7,18 +7,11 @@ export function About() {
 
   return (
     <Section id="about" title={t.sections.about.title} subtitle={t.sections.about.subtitle}>
-      <div className="about">
-        <div className="about__monogram" aria-hidden="true">
-          A
-        </div>
-        <div className="about__text">
-          {t.about.paragraphs.map((paragraph, index) => (
-            <p key={index} className="about__paragraph">
-              {paragraph}
-            </p>
-          ))}
-        </div>
-      </div>
+      {t.about.paragraphs.map((paragraph, index) => (
+        <p key={index} className="about__paragraph">
+          {paragraph}
+        </p>
+      ))}
     </Section>
   )
 }
