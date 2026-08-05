@@ -35,7 +35,7 @@ export function Header() {
     <header className="header">
       <div className="header__inner">
         <a href="#hero" className="header__brand" aria-label="Accueil — Axel Hetru">
-          Axel H.
+          Axel Hetru
         </a>
 
         <nav aria-label="Navigation principale" className="header__nav">
