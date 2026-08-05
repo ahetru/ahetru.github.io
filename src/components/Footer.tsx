@@ -1,6 +1,4 @@
 import { useDict } from '@/i18n/useDict'
-import { useLocale } from '@/i18n/useLocale'
-import { SUPPORTED_LOCALES } from '@/i18n/locales'
 import './Footer.css'
 
 export function Footer() {

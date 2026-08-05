@@ -49,8 +49,6 @@ export interface Dictionary {
 }
 
 function build(): Record<Locale, Dictionary> {
-  const base: Omit<Record<Locale, Dictionary>, 'fr' | 'en' | 'es'> = {} as never
-
   return {
     en: {
       pageTitle: 'Axel Hetru — Junior Backend Developer',
