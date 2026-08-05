@@ -1,8 +1,13 @@
-import type { Project } from './projects.data'
-import './Projects.css'
+export interface ProjectCardData {
+  title: string
+  description: string
+  tags: string[]
+  github: string
+  demo?: string
+}
 
 export interface ProjectCardProps {
-  project: Project
+  project: ProjectCardData
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
