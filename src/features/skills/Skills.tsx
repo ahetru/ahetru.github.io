@@ -1,12 +1,14 @@
 import { Section } from '@/components/Section'
-import { SKILL_GROUPS } from './skills.data'
+import { useDict } from '@/i18n/useDict'
 import './Skills.css'
 
 export function Skills() {
+  const t = useDict()
+
   return (
-    <Section id="skills" title="Compétences" subtitle="Les technologies que j'utilise au quotidien.">
+    <Section id="skills" title={t.sections.skills.title} subtitle={t.sections.skills.subtitle}>
       <div className="skills">
-        {SKILL_GROUPS.map((group) => (
+        {t.skills.groups.map((group) => (
           <div key={group.title} className="skills__group">
             <h3 className="skills__group-title">{group.title}</h3>
             <ul className="skills__chips">

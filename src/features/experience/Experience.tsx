@@ -1,12 +1,18 @@
 import { Section } from '@/components/Section'
-import { EXPERIENCES } from './experience.data'
+import { useDict } from '@/i18n/useDict'
 import './Experience.css'
 
 export function Experience() {
+  const t = useDict()
+
   return (
-    <Section id="experience" title="Expérience" subtitle="Mon parcours.">
+    <Section
+      id="experience"
+      title={t.sections.experience.title}
+      subtitle={t.sections.experience.subtitle}
+    >
       <ol className="timeline">
-        {EXPERIENCES.map((entry) => (
+        {t.experience.entries.map((entry) => (
           <li key={`${entry.org}-${entry.dates}`} className="timeline__item">
             <div className="timeline__marker" aria-hidden="true" />
             <div className="timeline__content">

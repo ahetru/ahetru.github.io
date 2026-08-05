@@ -1,18 +1,24 @@
+import { useDict } from '@/i18n/useDict'
 import './Hero.css'
 
 export function Hero() {
+  const t = useDict()
+
   return (
     <section id="hero" className="hero">
       <div className="hero__inner">
-        <p className="hero__hello">Bonjour, je suis</p>
+        <p className="hero__hello">{t.hero.hello}</p>
         <h1 className="hero__name">Axel Hetru</h1>
-        <p className="hero__role">Junior Software Engineer</p>
-        <p className="hero__tagline">
-          Construit des interfaces web sobres et performantes.
-        </p>
+        <p className="hero__role">{t.hero.role}</p>
+        <p className="hero__location">{t.hero.location}</p>
+        <p className="hero__tagline">{t.hero.tagline}</p>
         <div className="hero__cta">
-          <a className="btn btn--primary" href="#projects">Voir mes projets</a>
-          <a className="btn btn--ghost" href="#contact">Me contacter</a>
+          <a className="btn btn--primary" href="#projects-42">
+            {t.hero.ctaProjects}
+          </a>
+          <a className="btn btn--ghost" href="#contact">
+            {t.hero.ctaContact}
+          </a>
         </div>
       </div>
     </section>

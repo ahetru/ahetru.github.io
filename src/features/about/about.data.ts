@@ -4,8 +4,8 @@ export interface AboutData {
 
 export const ABOUT: AboutData = {
   paragraphs: [
-    '%PROFIL% — Ingénieur logiciel junior passionné par le développement web et la qualité du code.',
-    "Je construis des applications React soignées, accessibles et performantes, en accordant une attention particulière aux détails de l'interface.",
-    "Curieux et rigoureux, j'apprends continuellement et je partage volontiers mes expérimentations en open source.",
+    "Développeur backend junior issu d'un parcours analytique en Philosophie et Sociologie — des disciplines qui ont façonné ma façon d'aborder les problèmes : avec rigueur, à partir des premiers principes.",
+    "Formé à 42 Barcelone, j'ai acquis une compréhension concrète de ce qui se passe sous les abstractions : mémoire, concurrence, réseau. Je me soucie d'écrire du code correct, pas seulement fonctionnel.",
+    "J'approfondis actuellement ma boîte à outils backend avec Java et Spring Boot.",
   ],
 }

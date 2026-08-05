@@ -37,6 +37,12 @@
   font-weight: 500;
 }
 
+.hero__location {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+}
+
 .hero__tagline {
   color: var(--muted);
   font-size: 1.0625rem;

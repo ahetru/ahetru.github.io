@@ -6,14 +6,18 @@ export interface SkillGroup {
 export const SKILL_GROUPS: SkillGroup[] = [
   {
     title: 'Langages',
-    items: ['TypeScript', 'JavaScript', 'Python', 'Java', 'SQL'],
+    items: ['C', 'C++', 'Python', 'Java (en apprentissage)', 'Bash', 'SQL'],
   },
   {
-    title: 'Frameworks & libs',
-    items: ['React', 'Vite', 'Node.js', 'Spring Boot', 'Vitest'],
+    title: 'Backend',
+    items: ['Node.js (NestJS)', 'Spring Boot (en apprentissage)'],
   },
   {
-    title: 'Outils',
-    items: ['Git', 'Docker', 'pnpm', 'GitHub Actions', 'Linux'],
+    title: 'Bases de données & ORM',
+    items: ['MySQL', 'Prisma ORM'],
+  },
+  {
+    title: 'Dev Tools',
+    items: ['Docker', 'Git', 'GDB', 'Valgrind'],
   },
 ]

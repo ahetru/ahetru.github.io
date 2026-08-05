@@ -1,27 +1,37 @@
 import { useState } from 'react'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
+import { useDict } from '@/i18n/useDict'
 import { ThemeToggle } from '@/features/theme/ThemeToggle'
+import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 import './Header.css'
-
-const SECTION_IDS = ['hero', 'about', 'skills', 'projects', 'experience', 'contact'] as const
-
-interface NavItem {
-  id: string
-  label: string
-}
-
-const NAV_ITEMS: NavItem[] = [
-  { id: 'hero', label: 'Accueil' },
-  { id: 'about', label: 'À propos' },
-  { id: 'skills', label: 'Compétences' },
-  { id: 'projects', label: 'Projets' },
-  { id: 'experience', label: 'Expérience' },
-  { id: 'contact', label: 'Contact' },
-]
 
 export function Header() {
   const [open, setOpen] = useState(false)
-  const activeId = useScrollSpy(SECTION_IDS)
+  const t = useDict()
+
+  const SECTION_IDS = [
+    'hero',
+    'about',
+    'skills',
+    'projects-42',
+    'projects-personal',
+    'experience',
+    'education',
+    'contact',
+  ] as const
+
+  const NAV_ITEMS = [
+    { id: 'hero', label: t.nav.hero },
+    { id: 'about', label: t.nav.about },
+    { id: 'skills', label: t.nav.skills },
+    { id: 'projects-42', label: t.nav.projects42 },
+    { id: 'projects-personal', label: t.nav.projectsPersonal },
+    { id: 'experience', label: t.nav.experience },
+    { id: 'education', label: t.nav.education },
+    { id: 'contact', label: t.nav.contact },
+  ]
+
+  const activeId = useScrollSpy(SECTION_IDS as unknown as readonly string[])
 
   return (
     <header className="header">
@@ -46,6 +56,7 @@ export function Header() {
           </ul>
         </nav>
 
+        <LanguageSwitcher />
         <ThemeToggle />
 
         <button

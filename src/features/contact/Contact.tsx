@@ -1,12 +1,18 @@
 import { Section } from '@/components/Section'
-import { CONTACT } from './contact.data'
+import { useDict } from '@/i18n/useDict'
 import './Contact.css'
 
 export function Contact() {
+  const t = useDict()
+
   return (
-    <Section id="contact" title="Contact" subtitle="N'hésitez pas à me joindre.">
+    <Section
+      id="contact"
+      title={t.sections.contact.title}
+      subtitle={t.sections.contact.subtitle}
+    >
       <ul className="contact__list">
-        {CONTACT.links.map((link) => (
+        {t.contact.links.map((link) => (
           <li key={link.href}>
             <a
               href={link.href}
