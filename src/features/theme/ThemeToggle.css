@@ -6,7 +6,6 @@
   height: 2.5rem;
   border-radius: var(--radius);
   color: var(--fg-strong);
-  background-color: var(--bg-alt);
   transition:
     color var(--transition),
     background-color var(--transition);
@@ -14,4 +13,5 @@
 
 .theme-toggle:hover {
   color: var(--accent);
+  background-color: var(--bg-alt);
 }

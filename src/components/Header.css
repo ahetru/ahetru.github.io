@@ -10,17 +10,17 @@
 .header__inner {
   max-width: var(--max-width);
   margin-inline: auto;
-  padding-block: var(--space-3);
+  padding-block: var(--space-2);
   padding-inline: var(--space-4);
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-3);
 }
 
 .header__brand {
   font-weight: 600;
   color: var(--fg-strong);
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-right: auto;
 }
 
@@ -30,12 +30,12 @@
 
 .header__list {
   display: flex;
-  gap: var(--space-5);
+  gap: var(--space-4);
 }
 
 .header__link {
   color: var(--fg);
-  font-size: 0.9375rem;
+  font-size: 0.8125rem;
   padding-block: var(--space-1);
   border-bottom: 2px solid transparent;
   transition:
