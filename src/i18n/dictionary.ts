@@ -144,11 +144,11 @@ function build(): Record<Locale, Dictionary> {
       education: {
         entries: [
           {
-            role: 'Common Core — Computer Science',
+            role: 'Common Core — Programming',
             org: '42 School',
             dates: '2024 – 2026',
             description:
-              'Intensive peer-to-peer engineering program. Systems programming, algorithms, Unix internals, software architecture.',
+              'Project-based, peer-to-peer software engineering program focused on the fundamentals of computer science, systems programming, and software engineering.',
           },
           {
             role: 'Python & AI Bootcamp',
@@ -159,13 +159,13 @@ function build(): Record<Locale, Dictionary> {
           {
             role: "Bachelor's Degree — Philosophy & Sociology",
             org: 'Université Paris Sorbonne',
-            dates: '2018',
+            dates: '2015 – 2018',
             description: '',
           },
           {
             role: "Bachelor's Degree — Psychology",
-            org: 'Université Paris Sorbonne',
-            dates: '2018',
+            org: 'Université Paris Descartes',
+            dates: '2012 – 2015',
             description: '',
           },
         ],
@@ -296,11 +296,11 @@ function build(): Record<Locale, Dictionary> {
       education: {
         entries: [
           {
-            role: 'Common Core — Informatique',
+            role: 'Common Core — Programmation',
             org: '42 School',
             dates: '2024 – 2026',
             description:
-              "Programme intensif d'ingénierie pair-à-pair. Programmation système, algorithmes, Unix interne, architecture logicielle.",
+              "Programme pair-à-pair basé sur des projets, axé sur les fondamentaux de l'informatique, la programmation système et l'architecture logicielle.",
           },
           {
             role: 'Bootcamp Python & IA',
@@ -311,13 +311,13 @@ function build(): Record<Locale, Dictionary> {
           {
             role: 'Licence — Philosophie & Sociologie',
             org: 'Université Paris Sorbonne',
-            dates: '2018',
+            dates: '2015 – 2018',
             description: '',
           },
           {
             role: 'Licence — Psychologie',
-            org: 'Université Paris Sorbonne',
-            dates: '2018',
+            org: 'Université Paris Descartes',
+            dates: '2012 – 2015',
             description: '',
           },
         ],
@@ -448,11 +448,11 @@ function build(): Record<Locale, Dictionary> {
       education: {
         entries: [
           {
-            role: 'Common Core — Informática',
+            role: 'Common Core — Programación',
             org: '42 School',
             dates: '2024 – 2026',
             description:
-              'Programa intensivo de ingeniería entre pares. Programación de sistemas, algoritmos, interior de Unix, arquitectura de software.',
+              'Programa de ingeniería de software entre pares basado en proyectos, enfocado en los fundamentos de la informática, la programación de sistemas y la ingeniería de software.',
           },
           {
             role: 'Bootcamp Python & IA',
@@ -461,15 +461,15 @@ function build(): Record<Locale, Dictionary> {
             description: 'Bootcamp sobre Python e inteligencia artificial.',
           },
           {
-            role: 'Licenciatura — Filosofía y Sociología',
+            role: 'Grado universitario — Filosofía y Sociología',
             org: 'Université Paris Sorbonne',
-            dates: '2018',
+            dates: '2015 – 2018',
             description: '',
           },
           {
-            role: 'Licenciatura — Psicología',
-            org: 'Université Paris Sorbonne',
-            dates: '2018',
+            role: 'Grado universitario — Psicología',
+            org: 'Université Paris Descartes',
+            dates: '2012 – 2015',
             description: '',
           },
         ],
