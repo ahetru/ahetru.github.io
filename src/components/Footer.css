@@ -26,7 +26,7 @@
 }
 
 .footer__link {
-  color: var(--fg);
+  color: var(--muted);
   font-size: 0.875rem;
   transition: color var(--transition);
 }
