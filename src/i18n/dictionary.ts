@@ -103,6 +103,13 @@ function build(): Record<Locale, Dictionary> {
       projectsPersonal: {
         items: [
           {
+            title: 'Portfolio',
+            description:
+              'Personal website built with React, TypeScript, and Vite.',
+            tags: ['React', 'TypeScript', 'Vite'],
+            github: 'https://github.com/ahetru/ahetru.github.io',
+          },
+          {
             title: 'Chess Visualization Trainer',
             description:
               'Personal project to learn Java and Spring Boot through a chess training application.',
@@ -232,6 +239,13 @@ function build(): Record<Locale, Dictionary> {
       projectsPersonal: {
         items: [
           {
+            title: 'Portfolio',
+            description:
+              'Site personnel construit avec React, TypeScript et Vite.',
+            tags: ['React', 'TypeScript', 'Vite'],
+            github: 'https://github.com/ahetru/ahetru.github.io',
+          },
+          {
             title: 'Chess Visualization Trainer',
             description:
               "Projet personnel d'apprentissage de Java et Spring Boot via une application d'entraînement aux échecs.",
@@ -360,6 +374,13 @@ function build(): Record<Locale, Dictionary> {
       },
       projectsPersonal: {
         items: [
+          {
+            title: 'Portfolio',
+            description:
+              'Sitio personal construido con React, TypeScript y Vite.',
+            tags: ['React', 'TypeScript', 'Vite'],
+            github: 'https://github.com/ahetru/ahetru.github.io',
+          },
           {
             title: 'Chess Visualization Trainer',
             description:
