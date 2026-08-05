@@ -1,0 +1,23 @@
+.contact__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.contact__link {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-3) var(--space-5);
+  border: 1px solid var(--bg-alt);
+  border-radius: var(--radius);
+  color: var(--fg-strong);
+  font-weight: 500;
+  transition:
+    border-color var(--transition),
+    color var(--transition);
+}
+
+.contact__link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
