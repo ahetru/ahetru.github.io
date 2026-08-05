@@ -1,32 +1,21 @@
 .linked-list {
   display: flex;
-  align-items: stretch;
-  gap: 0;
-  overflow-x: auto;
-  padding: var(--space-3) 0 var(--space-4);
-  scroll-snap-type: x proximity;
-  scroll-padding-inline: var(--space-2);
-}
-
-.linked-list::-webkit-scrollbar {
-  height: 0;
-}
-
-.linked-list {
-  scrollbar-width: none;
+  flex-direction: column;
+  gap: var(--space-1);
 }
 
 .linked-list__group {
   display: flex;
-  align-items: stretch;
-  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
 }
 
 .linked-list__node {
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  min-width: 8.5rem;
-  max-width: 11rem;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  max-width: 20rem;
   padding: var(--space-3) var(--space-4);
   border: 1px solid var(--bg-alt);
   border-radius: var(--radius);
@@ -34,9 +23,6 @@
   transition:
     border-color var(--transition),
     transform var(--transition);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
   text-decoration: none;
   color: inherit;
   cursor: default;
@@ -48,7 +34,7 @@ a.linked-list__node {
 
 a.linked-list__node:hover {
   border-color: var(--accent);
-  transform: translateY(-2px);
+  transform: translateX(4px);
 }
 
 .linked-list__node--muted {
@@ -57,9 +43,9 @@ a.linked-list__node:hover {
 
 .linked-list__name {
   color: var(--fg-strong);
-  font-size: 0.9375rem;
   font-weight: 600;
   font-family: var(--font-mono);
+  font-size: 0.9375rem;
   white-space: nowrap;
 }
 
@@ -67,6 +53,7 @@ a.linked-list__node:hover {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-1);
+  margin-left: auto;
 }
 
 .linked-list__tag {
@@ -79,13 +66,10 @@ a.linked-list__node:hover {
 }
 
 .linked-list__arrow {
-  display: flex;
-  align-items: center;
-  padding: 0 var(--space-2);
   color: var(--accent);
   font-family: var(--font-mono);
-  font-size: 1.25rem;
-  flex-shrink: 0;
+  font-size: 1rem;
+  padding-block: var(--space-1);
   user-select: none;
 }
 
