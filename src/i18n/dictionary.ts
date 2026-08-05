@@ -87,6 +87,10 @@ function build(): Record<Locale, Dictionary> {
             items: ['C', 'C++', 'Python', 'Java', 'JavaScript', 'Bash', 'SQL'],
           },
           {
+            title: 'Frontend',
+            items: ['React'],
+          },
+          {
             title: 'Backend',
             items: ['Node.js (NestJS)', 'Spring Boot'],
           },
@@ -212,6 +216,10 @@ function build(): Record<Locale, Dictionary> {
             items: ['C', 'C++', 'Python', 'Java', 'JavaScript', 'Bash', 'SQL'],
           },
           {
+            title: 'Frontend',
+            items: ['React'],
+          },
+          {
             title: 'Backend',
             items: ['Node.js (NestJS)', 'Spring Boot'],
           },
@@ -335,6 +343,10 @@ function build(): Record<Locale, Dictionary> {
           {
             title: 'Lenguajes',
             items: ['C', 'C++', 'Python', 'Java', 'JavaScript', 'Bash', 'SQL'],
+          },
+          {
+            title: 'Frontend',
+            items: ['React'],
           },
           {
             title: 'Backend',
