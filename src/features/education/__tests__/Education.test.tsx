@@ -13,14 +13,13 @@ describe('Education', () => {
     cleanup()
   })
 
-  it('renders 3 education entries', () => {
+  it('renders 4 education entries', () => {
     const { getAllByRole } = render(<Education />)
-    const items = getAllByRole('listitem')
-    expect(items).toHaveLength(3)
+    expect(getAllByRole('listitem')).toHaveLength(4)
   })
 
-  it('renders 42 Barcelona as the first entry', () => {
+  it('renders 42 School as the first entry', () => {
     const { getByText } = render(<Education />)
-    expect(getByText('42 Barcelona')).toBeInTheDocument()
+    expect(getByText('42 School')).toBeInTheDocument()
   })
 })

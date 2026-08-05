@@ -44,8 +44,6 @@ export interface Dictionary {
   contact: {
     links: { label: string; href: string; aria: string }[]
   }
-  lang: string
-  footer: { langLabel: string; langList: string }
 }
 
 function build(): Record<Locale, Dictionary> {
@@ -53,7 +51,7 @@ function build(): Record<Locale, Dictionary> {
     en: {
       pageTitle: 'Axel Hetru — Junior Backend Developer',
       pageDescription:
-        'Portfolio of Axel Hetru, junior backend developer trained at 42 Barcelona. C, C++, Java, Spring Boot.',
+        'Portfolio of Axel Hetru, junior backend developer trained at 42 School. C, C++, Java, Spring Boot.',
       nav: {
         hero: 'Home',
         about: 'About',
@@ -69,7 +67,7 @@ function build(): Record<Locale, Dictionary> {
         role: 'Junior Backend Developer',
         location: 'Barcelona, Spain',
         tagline:
-          'Code that is correct, not just functional. Trained at 42 Barcelona, I work close to the abstractions — memory, concurrency, networking — and am currently deepening my backend toolkit with Java & Spring Boot.',
+          'Code that is correct, not just functional. Trained at 42 School, I work close to the abstractions — memory, concurrency, networking — and am deepening my backend toolkit with Java & Spring Boot.',
         ctaProjects: 'View my projects',
         ctaContact: 'Contact me',
       },
@@ -77,7 +75,7 @@ function build(): Record<Locale, Dictionary> {
         about: { title: 'About', subtitle: 'A bit of context.' },
         skills: { title: 'Skills', subtitle: 'Technologies I work with.' },
         projects42: {
-          title: '42 Barcelona',
+          title: '42 School',
           subtitle: 'My path through the Common Core.',
         },
         projectsPersonal: {
@@ -100,7 +98,7 @@ function build(): Record<Locale, Dictionary> {
       about: {
         paragraphs: [
           'Junior backend developer with an analytical background rooted in Philosophy and Sociology — disciplines that shaped how I approach problems: rigorously, from first principles.',
-          'Trained at 42 Barcelona, I have developed a genuine understanding of what happens beneath the abstractions (memory, concurrency, networking), and I care about writing code that is correct, not just functional.',
+          'Trained at 42 School, I have developed a genuine understanding of what happens beneath the abstractions (memory, concurrency, networking), and I care about writing code that is correct, not just functional.',
           'Currently deepening my backend toolkit with Java and Spring Boot.',
         ],
       },
@@ -108,19 +106,15 @@ function build(): Record<Locale, Dictionary> {
         groups: [
           {
             title: 'Languages',
-            items: ['C', 'C++', 'Python', 'Java (learning)', 'Bash', 'SQL'],
+            items: ['C', 'C++', 'Python', 'Java', 'Bash', 'SQL'],
           },
           {
             title: 'Backend',
-            items: ['Node.js (NestJS)', 'Spring Boot (learning)'],
+            items: ['Node.js (NestJS)', 'Spring Boot'],
           },
           {
             title: 'Databases & ORM',
             items: ['MySQL', 'Prisma ORM'],
-          },
-          {
-            title: 'Dev Tools',
-            items: ['Docker', 'Git', 'GDB', 'Valgrind'],
           },
         ],
       },
@@ -142,7 +136,7 @@ function build(): Record<Locale, Dictionary> {
             org: 'Computacenter',
             dates: '2022 – 2023',
             description:
-              'Diagnosed and resolved IT issues; classified incidents and escalated to specialist teams. This role is where my interest in software and technical problem-solving started, leading me to pursue formal training at 42 Barcelona.',
+              'Diagnosed and resolved IT issues; classified incidents and escalated to specialist teams. This role is where my interest in software and technical problem-solving started, leading me to pursue formal training at 42 School.',
           },
         ],
       },
@@ -150,7 +144,7 @@ function build(): Record<Locale, Dictionary> {
         entries: [
           {
             role: 'Common Core — Computer Science',
-            org: '42 Barcelona',
+            org: '42 School',
             dates: '2024 – 2026',
             description:
               'Intensive peer-to-peer engineering program. Systems programming, algorithms, Unix internals, software architecture.',
@@ -167,33 +161,34 @@ function build(): Record<Locale, Dictionary> {
             dates: '2018',
             description: '',
           },
+          {
+            role: "Bachelor's Degree — Psychology",
+            org: 'Université Paris Sorbonne',
+            dates: '2018',
+            description: '',
+          },
         ],
       },
       contact: {
         links: [
           {
-            label: 'Email',
-            href: 'mailto:axel.hetru@gmail.com',
-            aria: 'Send an email to Axel Hetru',
-          },
-          {
             label: 'GitHub',
             href: 'https://github.com/ahetru',
             aria: "Axel Hetru's GitHub profile",
           },
+          {
+            label: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/axel-hetru/',
+            aria: "Axel Hetru's LinkedIn profile",
+          },
         ],
-      },
-      lang: 'Language',
-      footer: {
-        langLabel: 'Languages',
-        langList: 'FR · native (C2)  ·  EN · professional (B2)  ·  ES · professional (B2)  ·  CA · intermediate (B1)',
       },
     },
 
     fr: {
       pageTitle: 'Axel Hetru — Développeur Backend Junior',
       pageDescription:
-        'Portfolio d\'Axel Hetru, développeur backend junior formé à 42 Barcelone. C, C++, Java, Spring Boot.',
+        "Portfolio d'Axel Hetru, développeur backend junior formé à 42 School. C, C++, Java, Spring Boot.",
       nav: {
         hero: 'Accueil',
         about: 'À propos',
@@ -209,15 +204,15 @@ function build(): Record<Locale, Dictionary> {
         role: 'Junior Backend Developer',
         location: 'Barcelone, Espagne',
         tagline:
-          'Code correct, pas seulement fonctionnel. Formé à 42 Barcelone, je travaille au plus près des abstractions — mémoire, concurrence, réseau — et j\'approfondis actuellement Java & Spring Boot.',
+          "Code correct, pas seulement fonctionnel. Formé à 42 School, je travaille au plus près des abstractions — mémoire, concurrence, réseau — et j'approfondis actuellement Java & Spring Boot.",
         ctaProjects: 'Voir mes projets',
         ctaContact: 'Me contacter',
       },
       sections: {
         about: { title: 'À propos', subtitle: 'Un peu de contexte.' },
-        skills: { title: 'Compétences', subtitle: 'Les technologies que j\'utilise.' },
+        skills: { title: 'Compétences', subtitle: "Les technologies que j'utilise." },
         projects42: {
-          title: '42 Barcelone',
+          title: '42 School',
           subtitle: 'Mon parcours à travers le tronc commun.',
         },
         projectsPersonal: {
@@ -234,33 +229,29 @@ function build(): Record<Locale, Dictionary> {
         },
         contact: {
           title: 'Contact',
-          subtitle: 'N\'hésitez pas à me joindre.',
+          subtitle: "N'hésitez pas à me joindre.",
         },
       },
       about: {
         paragraphs: [
-          'Développeur backend junior issu d\'un parcours analytique en Philosophie et Sociologie — des disciplines qui ont façonné ma façon d\'aborder les problèmes : avec rigueur, à partir des premiers principes.',
-          'Formé à 42 Barcelone, j\'ai acquis une compréhension concrète de ce qui se passe sous les abstractions : mémoire, concurrence, réseau. Je me soucie d\'écrire du code correct, pas seulement fonctionnel.',
-          'J\'approfondis actuellement ma boîte à outils backend avec Java et Spring Boot.',
+          "Développeur backend junior issu d'un parcours analytique en Philosophie et Sociologie — des disciplines qui ont façonné ma façon d'aborder les problèmes : avec rigueur, à partir des premiers principes.",
+          "Formé à 42 School, j'ai acquis une compréhension concrète de ce qui se passe sous les abstractions : mémoire, concurrence, réseau. Je me soucie d'écrire du code correct, pas seulement fonctionnel.",
+          "J'approfondis actuellement ma boîte à outils backend avec Java et Spring Boot.",
         ],
       },
       skills: {
         groups: [
           {
             title: 'Langages',
-            items: ['C', 'C++', 'Python', 'Java (en apprentissage)', 'Bash', 'SQL'],
+            items: ['C', 'C++', 'Python', 'Java', 'Bash', 'SQL'],
           },
           {
             title: 'Backend',
-            items: ['Node.js (NestJS)', 'Spring Boot (en apprentissage)'],
+            items: ['Node.js (NestJS)', 'Spring Boot'],
           },
           {
             title: 'Bases de données & ORM',
             items: ['MySQL', 'Prisma ORM'],
-          },
-          {
-            title: 'Dev Tools',
-            items: ['Docker', 'Git', 'GDB', 'Valgrind'],
           },
         ],
       },
@@ -269,7 +260,7 @@ function build(): Record<Locale, Dictionary> {
           {
             title: 'Chess Visualization Trainer',
             description:
-              'Projet personnel d\'apprentissage de Java et Spring Boot via une application d\'entraînement aux échecs.',
+              "Projet personnel d'apprentissage de Java et Spring Boot via une application d'entraînement aux échecs.",
             tags: ['Java', 'Spring Boot'],
             github: 'https://github.com/ahetru/chess-visualization-trainer',
           },
@@ -282,7 +273,7 @@ function build(): Record<Locale, Dictionary> {
             org: 'Computacenter',
             dates: '2022 – 2023',
             description:
-              'Diagnostic et résolution d\'incidents IT ; classification et escalade vers équipes spécialisées. C\'est dans ce rôle qu\'est née mon intérêt pour le logiciel et la résolution de problèmes techniques — ce qui m\'a conduit à 42 Barcelone.',
+              "Diagnostic et résolution d'incidents IT ; classification et escalade vers équipes spécialisées. C'est dans ce rôle qu'est née mon intérêt pour le logiciel et la résolution de problèmes techniques — ce qui m'a conduit à 42 School.",
           },
         ],
       },
@@ -290,19 +281,25 @@ function build(): Record<Locale, Dictionary> {
         entries: [
           {
             role: 'Common Core — Informatique',
-            org: '42 Barcelone',
+            org: '42 School',
             dates: '2024 – 2026',
             description:
-              'Programme intensif d\'ingénierie pair-à-pair. Programmation système, algorithmes, Unix interne, architecture logicielle.',
+              "Programme intensif d'ingénierie pair-à-pair. Programmation système, algorithmes, Unix interne, architecture logicielle.",
           },
           {
             role: 'Bootcamp Python & IA',
             org: 'Fundación Esplai',
             dates: '2024',
-            description: 'Bootcamp sur Python et l\'intelligence artificielle.',
+            description: "Bootcamp sur Python et l'intelligence artificielle.",
           },
           {
             role: 'Licence — Philosophie & Sociologie',
+            org: 'Université Paris Sorbonne',
+            dates: '2018',
+            description: '',
+          },
+          {
+            role: 'Licence — Psychologie',
             org: 'Université Paris Sorbonne',
             dates: '2018',
             description: '',
@@ -312,28 +309,23 @@ function build(): Record<Locale, Dictionary> {
       contact: {
         links: [
           {
-            label: 'Email',
-            href: 'mailto:axel.hetru@gmail.com',
-            aria: 'Envoyer un email à Axel Hetru',
-          },
-          {
             label: 'GitHub',
             href: 'https://github.com/ahetru',
-            aria: 'Profil GitHub d\'Axel Hetru',
+            aria: "Profil GitHub d'Axel Hetru",
+          },
+          {
+            label: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/axel-hetru/',
+            aria: "Profil LinkedIn d'Axel Hetru",
           },
         ],
-      },
-      lang: 'Langue',
-      footer: {
-        langLabel: 'Langues',
-        langList: 'FR · natif (C2)  ·  EN · professionnel (B2)  ·  ES · professionnel (B2)  ·  CA · intermédiaire (B1)',
       },
     },
 
     es: {
       pageTitle: 'Axel Hetru — Desarrollador Backend Junior',
       pageDescription:
-        'Portfolio de Axel Hetru, desarrollador backend junior formado en 42 Barcelona. C, C++, Java, Spring Boot.',
+        'Portfolio de Axel Hetru, desarrollador backend junior formado en 42 School. C, C++, Java, Spring Boot.',
       nav: {
         hero: 'Inicio',
         about: 'Sobre mí',
@@ -349,7 +341,7 @@ function build(): Record<Locale, Dictionary> {
         role: 'Junior Backend Developer',
         location: 'Barcelona, España',
         tagline:
-          'Código correcto, no solo funcional. Formado en 42 Barcelona, trabajo cerca de las abstracciones — memoria, concurrencia, red — y actualmente profundizo en Java & Spring Boot.',
+          'Código correcto, no solo funcional. Formado en 42 School, trabajo cerca de las abstracciones — memoria, concurrencia, red — y actualmente profundizo en Java & Spring Boot.',
         ctaProjects: 'Ver mis proyectos',
         ctaContact: 'Contactarme',
       },
@@ -357,7 +349,7 @@ function build(): Record<Locale, Dictionary> {
         about: { title: 'Sobre mí', subtitle: 'Un poco de contexto.' },
         skills: { title: 'Habilidades', subtitle: 'Tecnologías con las que trabajo.' },
         projects42: {
-          title: '42 Barcelona',
+          title: '42 School',
           subtitle: 'Mi recorrido por el Common Core.',
         },
         projectsPersonal: {
@@ -380,7 +372,7 @@ function build(): Record<Locale, Dictionary> {
       about: {
         paragraphs: [
           'Desarrollador backend junior con una formación analítica en Filosofía y Sociología — disciplinas que moldearon mi forma de abordar problemas: con rigor, desde los primeros principios.',
-          'Formado en 42 Barcelona, he desarrollado una comprensión real de lo que ocurre bajo las abstracciones (memoria, concurrencia, red), y me preocupo por escribir código correcto, no solo funcional.',
+          'Formado en 42 School, he desarrollado una comprensión real de lo que ocurre bajo las abstracciones (memoria, concurrencia, red), y me preocupo por escribir código correcto, no solo funcional.',
           'Actualmente profundizando mi stack backend con Java y Spring Boot.',
         ],
       },
@@ -388,19 +380,15 @@ function build(): Record<Locale, Dictionary> {
         groups: [
           {
             title: 'Lenguajes',
-            items: ['C', 'C++', 'Python', 'Java (en aprendizaje)', 'Bash', 'SQL'],
+            items: ['C', 'C++', 'Python', 'Java', 'Bash', 'SQL'],
           },
           {
             title: 'Backend',
-            items: ['Node.js (NestJS)', 'Spring Boot (en aprendizaje)'],
+            items: ['Node.js (NestJS)', 'Spring Boot'],
           },
           {
             title: 'Bases de datos & ORM',
             items: ['MySQL', 'Prisma ORM'],
-          },
-          {
-            title: 'Dev Tools',
-            items: ['Docker', 'Git', 'GDB', 'Valgrind'],
           },
         ],
       },
@@ -422,7 +410,7 @@ function build(): Record<Locale, Dictionary> {
             org: 'Computacenter',
             dates: '2022 – 2023',
             description:
-              'Diagnóstico y resolución de incidencias de TI; clasificación y escalamiento a equipos especializados. En este rol nació mi interés por el software y la resolución de problemas técnicos, lo que me llevó a 42 Barcelona.',
+              'Diagnóstico y resolución de incidencias de TI; clasificación y escalamiento a equipos especializados. En este rol nació mi interés por el software y la resolución de problemas técnicos, lo que me llevó a 42 School.',
           },
         ],
       },
@@ -430,7 +418,7 @@ function build(): Record<Locale, Dictionary> {
         entries: [
           {
             role: 'Common Core — Informática',
-            org: '42 Barcelona',
+            org: '42 School',
             dates: '2024 – 2026',
             description:
               'Programa intensivo de ingeniería entre pares. Programación de sistemas, algoritmos, interior de Unix, arquitectura de software.',
@@ -447,26 +435,27 @@ function build(): Record<Locale, Dictionary> {
             dates: '2018',
             description: '',
           },
+          {
+            role: 'Licenciatura — Psicología',
+            org: 'Université Paris Sorbonne',
+            dates: '2018',
+            description: '',
+          },
         ],
       },
       contact: {
         links: [
           {
-            label: 'Email',
-            href: 'mailto:axel.hetru@gmail.com',
-            aria: 'Enviar un email a Axel Hetru',
-          },
-          {
             label: 'GitHub',
             href: 'https://github.com/ahetru',
             aria: 'Perfil GitHub de Axel Hetru',
           },
+          {
+            label: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/axel-hetru/',
+            aria: 'Perfil LinkedIn de Axel Hetru',
+          },
         ],
-      },
-      lang: 'Idioma',
-      footer: {
-        langLabel: 'Idiomas',
-        langList: 'FR · nativo (C2)  ·  EN · profesional (B2)  ·  ES · profesional (B2)  ·  CA · intermedio (B1)',
       },
     },
   }

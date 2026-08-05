@@ -20,16 +20,10 @@ describe('Contact', () => {
     expect(section!.tagName).toBe('SECTION')
   })
 
-  it('renders email and GitHub links', () => {
+  it('renders GitHub and LinkedIn links', () => {
     const { getAllByRole } = render(<Contact />)
     const links = getAllByRole('link')
     expect(links).toHaveLength(2)
-  })
-
-  it('renders the email link with the correct mailto href', () => {
-    const { getByRole } = render(<Contact />)
-    const emailLink = getByRole('link', { name: 'Send an email to Axel Hetru' })
-    expect(emailLink.getAttribute('href')).toBe('mailto:axel.hetru@gmail.com')
   })
 
   it('renders the GitHub link with the correct URL', () => {
@@ -37,5 +31,12 @@ describe('Contact', () => {
     const ghLink = getByRole('link', { name: "Axel Hetru's GitHub profile" })
     expect(ghLink.getAttribute('href')).toBe('https://github.com/ahetru')
     expect(ghLink.getAttribute('target')).toBe('_blank')
+  })
+
+  it('renders the LinkedIn link with the correct URL', () => {
+    const { getByRole } = render(<Contact />)
+    const liLink = getByRole('link', { name: "Axel Hetru's LinkedIn profile" })
+    expect(liLink.getAttribute('href')).toBe('https://www.linkedin.com/in/axel-hetru/')
+    expect(liLink.getAttribute('target')).toBe('_blank')
   })
 })

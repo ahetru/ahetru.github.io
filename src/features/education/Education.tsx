@@ -13,7 +13,7 @@ export function Education() {
     >
       <ol className="timeline">
         {t.education.entries.map((entry) => (
-          <li key={`${entry.org}-${entry.dates}`} className="timeline__item">
+          <li key={`${entry.role}-${entry.org}-${entry.dates}`} className="timeline__item">
             <div className="timeline__marker" aria-hidden="true" />
             <div className="timeline__content">
               <h3 className="timeline__role">
