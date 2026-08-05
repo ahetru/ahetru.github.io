@@ -11,7 +11,6 @@ export function Header() {
 
   const SECTION_IDS = [
     'hero',
-    'about',
     'skills',
     'projects-42',
     'projects-personal',
@@ -21,7 +20,6 @@ export function Header() {
 
   const NAV_ITEMS = [
     { id: 'hero', label: t.nav.hero },
-    { id: 'about', label: t.nav.about },
     { id: 'skills', label: t.nav.skills },
     { id: 'projects-42', label: t.nav.projects42 },
     { id: 'projects-personal', label: t.nav.projectsPersonal },

@@ -5,7 +5,6 @@ export interface Dictionary {
   pageDescription: string
   nav: {
     hero: string
-    about: string
     skills: string
     projects42: string
     projectsPersonal: string
@@ -13,21 +12,18 @@ export interface Dictionary {
     education: string
   }
   hero: {
-    hello: string
     role: string
     location: string
-    tagline: string
+    paragraphs: string[]
     ctaProjects: string
   }
   sections: {
-    about: { title: string; subtitle: string }
     skills: { title: string; subtitle: string }
     projects42: { title: string; subtitle: string }
     projectsPersonal: { title: string; subtitle: string }
     experience: { title: string; subtitle: string }
     education: { title: string; subtitle: string }
   }
-  about: { paragraphs: string[] }
   skills: { groups: { title: string; items: string[] }[] }
   projectsPersonal: {
     items: { title: string; description: string; tags: string[]; github: string }[]
@@ -44,12 +40,11 @@ export interface Dictionary {
 function build(): Record<Locale, Dictionary> {
   return {
     en: {
-      pageTitle: 'Axel Hetru — Junior Backend Developer',
+      pageTitle: 'Axel Hetru — Junior Developer',
       pageDescription:
         'Portfolio of Axel Hetru, junior backend developer trained at 42 School. C, C++, Java, Spring Boot.',
       nav: {
-        hero: 'Home',
-        about: 'About',
+        hero: 'About',
         skills: 'Skills',
         projects42: '42 Projects',
         projectsPersonal: 'Personal',
@@ -57,15 +52,16 @@ function build(): Record<Locale, Dictionary> {
         education: 'Education',
       },
       hero: {
-        hello: 'Hi, I am',
-        role: 'Junior Backend Developer',
+        role: 'Junior Developer',
         location: 'Barcelona, Spain',
-        tagline:
-          'Code that is correct, not just functional. Trained at 42 School, I work close to the abstractions — memory, concurrency, networking — and am deepening my backend toolkit with Java & Spring Boot.',
+        paragraphs: [
+          'I enjoy solving problems and building software that is both practical and well designed.',
+          'Coming from a background in Philosophy and Sociology, I naturally approach challenges by breaking them down and looking for clear, robust solutions. At 42 School, I developed a solid computer science foundation that allows me to work confidently across different areas of software development, from application logic to system fundamentals.',
+          "As a junior developer, I'm driven by curiosity more than by a specific stack. I like learning new technologies, collaborating with others, and turning ideas into reliable, maintainable software.",
+        ],
         ctaProjects: 'View my projects',
       },
       sections: {
-        about: { title: 'About', subtitle: 'A bit of context.' },
         skills: { title: 'Skills', subtitle: 'Technologies I work with.' },
         projects42: {
           title: '42 School',
@@ -83,13 +79,6 @@ function build(): Record<Locale, Dictionary> {
           title: 'Education',
           subtitle: 'My academic path.',
         },
-      },
-      about: {
-        paragraphs: [
-          'I enjoy solving problems and building software that is both practical and well designed.',
-          'Coming from a background in Philosophy and Sociology, I naturally approach challenges by breaking them down and looking for clear, robust solutions. At 42 School, I developed a solid computer science foundation that allows me to work confidently across different areas of software development, from application logic to system fundamentals.',
-          "As a junior developer, I'm driven by curiosity more than by a specific stack. I like learning new technologies, collaborating with others, and turning ideas into reliable, maintainable software.",
-        ],
       },
       skills: {
         groups: [
@@ -180,8 +169,7 @@ function build(): Record<Locale, Dictionary> {
       pageDescription:
         "Portfolio d'Axel Hetru, développeur backend junior formé à 42 School. C, C++, Java, Spring Boot.",
       nav: {
-        hero: 'Accueil',
-        about: 'À propos',
+        hero: 'À propos',
         skills: 'Compétences',
         projects42: 'Projets 42',
         projectsPersonal: 'Perso',
@@ -189,15 +177,16 @@ function build(): Record<Locale, Dictionary> {
         education: 'Formation',
       },
       hero: {
-        hello: 'Bonjour, je suis',
-        role: 'Junior Backend Developer',
+        role: 'Junior Developer',
         location: 'Barcelone, Espagne',
-        tagline:
-          "Code correct, pas seulement fonctionnel. Formé à 42 School, je travaille au plus près des abstractions — mémoire, concurrence, réseau — et j'approfondis actuellement Java & Spring Boot.",
+        paragraphs: [
+          "J'aime résoudre des problèmes et construire des logiciels à la fois pratiques et bien conçus.",
+          "Issu d'une formation en Philosophie et Sociologie, j'aborde naturellement les défis en les décomposant et en cherchant des solutions claires et robustes. À 42 School, j'ai acquis de solides bases en informatique qui me permettent de travailler avec confiance sur différents aspects du développement logiciel, de la logique applicative aux fondamentaux système.",
+          "En tant que développeur junior, je suis davantage guidé par la curiosité que par une stack spécifique. J'aime apprendre de nouvelles technologies, collaborer avec les autres et transformer des idées en logiciels fiables et maintenables.",
+        ],
         ctaProjects: 'Voir mes projets',
       },
       sections: {
-        about: { title: 'À propos', subtitle: 'Un peu de contexte.' },
         skills: { title: 'Compétences', subtitle: "Les technologies que j'utilise." },
         projects42: {
           title: '42 School',
@@ -215,13 +204,6 @@ function build(): Record<Locale, Dictionary> {
           title: 'Formation',
           subtitle: 'Mon parcours académique.',
         },
-      },
-      about: {
-        paragraphs: [
-          "J'aime résoudre des problèmes et construire des logiciels à la fois pratiques et bien conçus.",
-          "Issu d'une formation en Philosophie et Sociologie, j'aborde naturellement les défis en les décomposant et en cherchant des solutions claires et robustes. À 42 School, j'ai acquis de solides bases en informatique qui me permettent de travailler avec confiance sur différents aspects du développement logiciel, de la logique applicative aux fondamentaux système.",
-          "En tant que développeur junior, je suis davantage guidé par la curiosité que par une stack spécifique. J'aime apprendre de nouvelles technologies, collaborer avec les autres et transformer des idées en logiciels fiables et maintenables.",
-        ],
       },
       skills: {
         groups: [
@@ -312,8 +294,7 @@ function build(): Record<Locale, Dictionary> {
       pageDescription:
         'Portfolio de Axel Hetru, desarrollador backend junior formado en 42 School. C, C++, Java, Spring Boot.',
       nav: {
-        hero: 'Inicio',
-        about: 'Sobre mí',
+        hero: 'Sobre mí',
         skills: 'Habilidades',
         projects42: 'Proyectos 42',
         projectsPersonal: 'Personal',
@@ -321,15 +302,16 @@ function build(): Record<Locale, Dictionary> {
         education: 'Formación',
       },
       hero: {
-        hello: 'Hola, soy',
-        role: 'Junior Backend Developer',
+        role: 'Junior Developer',
         location: 'Barcelona, España',
-        tagline:
-          'Código correcto, no solo funcional. Formado en 42 School, trabajo cerca de las abstracciones — memoria, concurrencia, red — y actualmente profundizo en Java & Spring Boot.',
+        paragraphs: [
+          'Disfruto resolviendo problemas y construyendo software que sea práctico y bien diseñado.',
+          'Con una formación en Filosofía y Sociología, abordo los desafíos descomponiéndolos y buscando soluciones claras y robustas. En 42 School, desarrollé una base sólida en informática que me permite trabajar con confianza en distintas áreas del desarrollo de software, desde la lógica de aplicación hasta los fundamentos del sistema.',
+          'Como desarrollador junior, me mueve más la curiosidad que un stack específico. Me gusta aprender nuevas tecnologías, colaborar con otros y convertir ideas en software fiable y fácil de mantener.',
+        ],
         ctaProjects: 'Ver mis proyectos',
       },
       sections: {
-        about: { title: 'Sobre mí', subtitle: 'Un poco de contexto.' },
         skills: { title: 'Habilidades', subtitle: 'Tecnologías con las que trabajo.' },
         projects42: {
           title: '42 School',
@@ -347,13 +329,6 @@ function build(): Record<Locale, Dictionary> {
           title: 'Formación',
           subtitle: 'Mi trayectoria académica.',
         },
-      },
-      about: {
-        paragraphs: [
-          'Disfruto resolviendo problemas y construyendo software que sea práctico y bien diseñado.',
-          'Con una formación en Filosofía y Sociología, abordo los desafíos descomponiéndolos y buscando soluciones claras y robustas. En 42 School, desarrollé una base sólida en informática que me permite trabajar con confianza en distintas áreas del desarrollo de software, desde la lógica de aplicación hasta los fundamentos del sistema.',
-          'Como desarrollador junior, me mueve más la curiosidad que un stack específico. Me gusta aprender nuevas tecnologías, colaborar con otros y convertir ideas en software fiable y fácil de mantener.',
-        ],
       },
       skills: {
         groups: [
