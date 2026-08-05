@@ -44,6 +44,7 @@ export interface Dictionary {
   contact: {
     links: { label: string; href: string; aria: string }[]
   }
+  projects42Descs: Record<string, string>
 }
 
 function build(): Record<Locale, Dictionary> {
@@ -183,6 +184,21 @@ function build(): Record<Locale, Dictionary> {
           },
         ],
       },
+      projects42Descs: {
+        libft: 'Custom C library of utility functions',
+        ft_printf: 'Recreation of printf with variadic handling',
+        get_next_line: 'Line-by-line reading from a file descriptor',
+        born_to_be_root: 'Secure Linux server configuration',
+        push_swap: 'Optimized sorting algorithm with two stacks',
+        fractol: 'Fractal exploration using minilibX',
+        pipex: 'Stream redirection between commands via pipes',
+        philosophers: 'Philosophers simulation with threads and mutexes',
+        minishell: 'Full Unix shell with pipes and redirections',
+        cub3d: 'Raycasting engine in the style of Wolfenstein 3D',
+        cppmodules: 'Introduction to C++ and OOP',
+        ft_irc: 'Multi-client non-blocking IRC server (RFC 1459)',
+        ft_transcendence: 'Backend & infra for an online chess game',
+      },
     },
 
     fr: {
@@ -320,6 +336,21 @@ function build(): Record<Locale, Dictionary> {
           },
         ],
       },
+      projects42Descs: {
+        libft: 'Bibliothèque C de fonctions utilitaires',
+        ft_printf: 'Recréation de printf avec gestion variadique',
+        get_next_line: 'Lecture ligne par ligne depuis un file descriptor',
+        born_to_be_root: "Configuration d'un serveur Linux sécurisé",
+        push_swap: 'Algorithme de tri optimisé avec deux piles',
+        fractol: 'Exploration de fractales avec la minilibX',
+        pipex: 'Redirection de flux entre commandes via pipes',
+        philosophers: 'Simulation de philosophes avec threads et mutexes',
+        minishell: 'Shell Unix complet avec pipes et redirections',
+        cub3d: 'Moteur de raycasting façon Wolfenstein 3D',
+        cppmodules: 'Introduction au C++ et la POO',
+        ft_irc: 'Serveur IRC multi-clients non-bloquant (RFC 1459)',
+        ft_transcendence: "Backend & infra d'un jeu d'échecs en ligne",
+      },
     },
 
     es: {
@@ -456,6 +487,21 @@ function build(): Record<Locale, Dictionary> {
             aria: 'Perfil LinkedIn de Axel Hetru',
           },
         ],
+      },
+      projects42Descs: {
+        libft: 'Biblioteca C de funciones utilitarias',
+        ft_printf: 'Recreación de printf con manejo variádico',
+        get_next_line: 'Lectura línea por línea desde un file descriptor',
+        born_to_be_root: 'Configuración de un servidor Linux seguro',
+        push_swap: 'Algoritmo de ordenación optimizado con dos pilas',
+        fractol: 'Exploración de fractales con minilibX',
+        pipex: 'Redirección de flujos entre comandos mediante pipes',
+        philosophers: 'Simulación de filósofos con hilos y mutexes',
+        minishell: 'Shell Unix completo con pipes y redirecciones',
+        cub3d: 'Motor de raycasting al estilo Wolfenstein 3D',
+        cppmodules: 'Introducción a C++ y POO',
+        ft_irc: 'Servidor IRC multi-cliente no bloqueante (RFC 1459)',
+        ft_transcendence: 'Backend e infraestructura para ajedrez en línea',
       },
     },
   }

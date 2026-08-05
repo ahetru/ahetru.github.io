@@ -28,10 +28,11 @@ describe('Projects42', () => {
     const { container, getByLabelText } = render(<Projects42 />)
     expand(container)
     for (const project of PROJECTS_42) {
+      const desc = DICT.en.projects42Descs[project.slug]
       expect(
         getByLabelText(
           project.github
-            ? `${project.name} — ${project.tags.join(', ')}`
+            ? `${project.name} — ${desc}`
             : `${project.name} — pas de dépôt`,
         ),
       ).toBeInTheDocument()
@@ -50,7 +51,8 @@ describe('Projects42', () => {
     expand(container)
     for (const project of PROJECTS_42) {
       if (!project.github) continue
-      const node = getByLabelText(`${project.name} — ${project.tags.join(', ')}`)
+      const desc = DICT.en.projects42Descs[project.slug]
+      const node = getByLabelText(`${project.name} — ${desc}`)
       expect(node.tagName).toBe('A')
       expect(node.getAttribute('href')).toMatch(/^https:\/\//)
       expect(node.getAttribute('target')).toBe('_blank')

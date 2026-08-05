@@ -13,9 +13,10 @@
 .linked-list__node {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: var(--space-3);
   width: 100%;
-  max-width: 20rem;
+  max-width: 28rem;
   padding: var(--space-3) var(--space-4);
   border: 1px solid var(--bg-alt);
   border-radius: var(--radius);
@@ -26,6 +27,7 @@
   text-decoration: none;
   color: inherit;
   cursor: default;
+  position: relative;
 }
 
 a.linked-list__node {
@@ -47,6 +49,7 @@ a.linked-list__node:hover {
   font-family: var(--font-mono);
   font-size: 0.9375rem;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .linked-list__tags {
@@ -65,6 +68,26 @@ a.linked-list__node:hover {
   background-color: var(--bg);
 }
 
+.linked-list__desc {
+  width: 100%;
+  font-size: 0.8125rem;
+  color: var(--fg);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height var(--transition),
+    opacity var(--transition),
+    margin var(--transition);
+}
+
+.linked-list__node:hover .linked-list__desc,
+.linked-list__node:focus-within .linked-list__desc {
+  max-height: 3rem;
+  opacity: 1;
+  margin-top: var(--space-1);
+}
+
 .linked-list__arrow {
   color: var(--accent);
   font-family: var(--font-mono);
@@ -76,5 +99,9 @@ a.linked-list__node:hover {
 @media (prefers-reduced-motion: reduce) {
   a.linked-list__node:hover {
     transform: none;
+  }
+
+  .linked-list__desc {
+    transition: none;
   }
 }
