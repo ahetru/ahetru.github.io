@@ -7,7 +7,6 @@ import { Projects42 } from '@/features/projects42/Projects42'
 import { PersonalProjects } from '@/features/projects-personal/PersonalProjects'
 import { Experience } from '@/features/experience/Experience'
 import { Education } from '@/features/education/Education'
-import { Contact } from '@/features/contact/Contact'
 
 export default function App() {
   return (
@@ -20,7 +19,6 @@ export default function App() {
         <PersonalProjects />
         <Experience />
         <Education />
-        <Contact />
       </Layout>
     </LocaleProvider>
   )

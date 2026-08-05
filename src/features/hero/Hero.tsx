@@ -16,9 +16,6 @@ export function Hero() {
           <a className="btn btn--primary" href="#projects-42">
             {t.hero.ctaProjects}
           </a>
-          <a className="btn btn--ghost" href="#contact">
-            {t.hero.ctaContact}
-          </a>
         </div>
       </div>
     </section>

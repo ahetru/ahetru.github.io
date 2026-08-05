@@ -11,7 +11,6 @@ export interface Dictionary {
     projectsPersonal: string
     experience: string
     education: string
-    contact: string
   }
   hero: {
     hello: string
@@ -19,7 +18,6 @@ export interface Dictionary {
     location: string
     tagline: string
     ctaProjects: string
-    ctaContact: string
   }
   sections: {
     about: { title: string; subtitle: string }
@@ -28,7 +26,6 @@ export interface Dictionary {
     projectsPersonal: { title: string; subtitle: string }
     experience: { title: string; subtitle: string }
     education: { title: string; subtitle: string }
-    contact: { title: string; subtitle: string }
   }
   about: { paragraphs: string[] }
   skills: { groups: { title: string; items: string[] }[] }
@@ -40,9 +37,6 @@ export interface Dictionary {
   }
   education: {
     entries: { role: string; org: string; dates: string; description: string }[]
-  }
-  contact: {
-    links: { label: string; href: string; aria: string }[]
   }
   projects42Descs: Record<string, string>
 }
@@ -61,7 +55,6 @@ function build(): Record<Locale, Dictionary> {
         projectsPersonal: 'Personal',
         experience: 'Experience',
         education: 'Education',
-        contact: 'Contact',
       },
       hero: {
         hello: 'Hi, I am',
@@ -70,7 +63,6 @@ function build(): Record<Locale, Dictionary> {
         tagline:
           'Code that is correct, not just functional. Trained at 42 School, I work close to the abstractions — memory, concurrency, networking — and am deepening my backend toolkit with Java & Spring Boot.',
         ctaProjects: 'View my projects',
-        ctaContact: 'Contact me',
       },
       sections: {
         about: { title: 'About', subtitle: 'A bit of context.' },
@@ -90,10 +82,6 @@ function build(): Record<Locale, Dictionary> {
         education: {
           title: 'Education',
           subtitle: 'My academic path.',
-        },
-        contact: {
-          title: 'Contact',
-          subtitle: 'Feel free to reach out.',
         },
       },
       about: {
@@ -170,20 +158,6 @@ function build(): Record<Locale, Dictionary> {
           },
         ],
       },
-      contact: {
-        links: [
-          {
-            label: 'GitHub',
-            href: 'https://github.com/ahetru',
-            aria: "Axel Hetru's GitHub profile",
-          },
-          {
-            label: 'LinkedIn',
-            href: 'https://www.linkedin.com/in/axel-hetru/',
-            aria: "Axel Hetru's LinkedIn profile",
-          },
-        ],
-      },
       projects42Descs: {
         libft: 'Custom C library of utility functions',
         ft_printf: 'Recreation of printf with variadic handling',
@@ -213,7 +187,6 @@ function build(): Record<Locale, Dictionary> {
         projectsPersonal: 'Perso',
         experience: 'Expérience',
         education: 'Formation',
-        contact: 'Contact',
       },
       hero: {
         hello: 'Bonjour, je suis',
@@ -222,7 +195,6 @@ function build(): Record<Locale, Dictionary> {
         tagline:
           "Code correct, pas seulement fonctionnel. Formé à 42 School, je travaille au plus près des abstractions — mémoire, concurrence, réseau — et j'approfondis actuellement Java & Spring Boot.",
         ctaProjects: 'Voir mes projets',
-        ctaContact: 'Me contacter',
       },
       sections: {
         about: { title: 'À propos', subtitle: 'Un peu de contexte.' },
@@ -242,10 +214,6 @@ function build(): Record<Locale, Dictionary> {
         education: {
           title: 'Formation',
           subtitle: 'Mon parcours académique.',
-        },
-        contact: {
-          title: 'Contact',
-          subtitle: "N'hésitez pas à me joindre.",
         },
       },
       about: {
@@ -322,20 +290,6 @@ function build(): Record<Locale, Dictionary> {
           },
         ],
       },
-      contact: {
-        links: [
-          {
-            label: 'GitHub',
-            href: 'https://github.com/ahetru',
-            aria: "Profil GitHub d'Axel Hetru",
-          },
-          {
-            label: 'LinkedIn',
-            href: 'https://www.linkedin.com/in/axel-hetru/',
-            aria: "Profil LinkedIn d'Axel Hetru",
-          },
-        ],
-      },
       projects42Descs: {
         libft: 'Bibliothèque C de fonctions utilitaires',
         ft_printf: 'Recréation de printf avec gestion variadique',
@@ -365,7 +319,6 @@ function build(): Record<Locale, Dictionary> {
         projectsPersonal: 'Personal',
         experience: 'Experiencia',
         education: 'Formación',
-        contact: 'Contacto',
       },
       hero: {
         hello: 'Hola, soy',
@@ -374,7 +327,6 @@ function build(): Record<Locale, Dictionary> {
         tagline:
           'Código correcto, no solo funcional. Formado en 42 School, trabajo cerca de las abstracciones — memoria, concurrencia, red — y actualmente profundizo en Java & Spring Boot.',
         ctaProjects: 'Ver mis proyectos',
-        ctaContact: 'Contactarme',
       },
       sections: {
         about: { title: 'Sobre mí', subtitle: 'Un poco de contexto.' },
@@ -394,10 +346,6 @@ function build(): Record<Locale, Dictionary> {
         education: {
           title: 'Formación',
           subtitle: 'Mi trayectoria académica.',
-        },
-        contact: {
-          title: 'Contacto',
-          subtitle: 'No dudes en contactarme.',
         },
       },
       about: {
@@ -471,20 +419,6 @@ function build(): Record<Locale, Dictionary> {
             org: 'Université Paris Descartes',
             dates: '2012 – 2015',
             description: '',
-          },
-        ],
-      },
-      contact: {
-        links: [
-          {
-            label: 'GitHub',
-            href: 'https://github.com/ahetru',
-            aria: 'Perfil GitHub de Axel Hetru',
-          },
-          {
-            label: 'LinkedIn',
-            href: 'https://www.linkedin.com/in/axel-hetru/',
-            aria: 'Perfil LinkedIn de Axel Hetru',
           },
         ],
       },

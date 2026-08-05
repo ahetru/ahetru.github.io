@@ -17,7 +17,6 @@ export function Header() {
     'projects-personal',
     'experience',
     'education',
-    'contact',
   ] as const
 
   const NAV_ITEMS = [
@@ -28,7 +27,6 @@ export function Header() {
     { id: 'projects-personal', label: t.nav.projectsPersonal },
     { id: 'experience', label: t.nav.experience },
     { id: 'education', label: t.nav.education },
-    { id: 'contact', label: t.nav.contact },
   ]
 
   const activeId = useScrollSpy(SECTION_IDS as unknown as readonly string[])
