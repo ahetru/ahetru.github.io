@@ -86,9 +86,9 @@ function build(): Record<Locale, Dictionary> {
       },
       about: {
         paragraphs: [
-          'Junior backend developer with an analytical background rooted in Philosophy and Sociology — disciplines that shaped how I approach problems: rigorously, from first principles.',
-          'Trained at 42 School, I have developed a genuine understanding of what happens beneath the abstractions (memory, concurrency, networking), and I care about writing code that is correct, not just functional.',
-          'Currently deepening my backend toolkit with Java and Spring Boot.',
+          'I enjoy solving problems and building software that is both practical and well designed.',
+          'Coming from a background in Philosophy and Sociology, I naturally approach challenges by breaking them down and looking for clear, robust solutions. At 42 School, I developed a solid computer science foundation that allows me to work confidently across different areas of software development, from application logic to system fundamentals.',
+          "As a junior developer, I'm driven by curiosity more than by a specific stack. I like learning new technologies, collaborating with others, and turning ideas into reliable, maintainable software.",
         ],
       },
       skills: {
@@ -218,9 +218,9 @@ function build(): Record<Locale, Dictionary> {
       },
       about: {
         paragraphs: [
-          "Développeur backend junior issu d'un parcours analytique en Philosophie et Sociologie — des disciplines qui ont façonné ma façon d'aborder les problèmes : avec rigueur, à partir des premiers principes.",
-          "Formé à 42 School, j'ai acquis une compréhension concrète de ce qui se passe sous les abstractions : mémoire, concurrence, réseau. Je me soucie d'écrire du code correct, pas seulement fonctionnel.",
-          "J'approfondis actuellement ma boîte à outils backend avec Java et Spring Boot.",
+          "J'aime résoudre des problèmes et construire des logiciels à la fois pratiques et bien conçus.",
+          "Issu d'une formation en Philosophie et Sociologie, j'aborde naturellement les défis en les décomposant et en cherchant des solutions claires et robustes. À 42 School, j'ai acquis de solides bases en informatique qui me permettent de travailler avec confiance sur différents aspects du développement logiciel, de la logique applicative aux fondamentaux système.",
+          "En tant que développeur junior, je suis davantage guidé par la curiosité que par une stack spécifique. J'aime apprendre de nouvelles technologies, collaborer avec les autres et transformer des idées en logiciels fiables et maintenables.",
         ],
       },
       skills: {
@@ -350,9 +350,9 @@ function build(): Record<Locale, Dictionary> {
       },
       about: {
         paragraphs: [
-          'Desarrollador backend junior con una formación analítica en Filosofía y Sociología — disciplinas que moldearon mi forma de abordar problemas: con rigor, desde los primeros principios.',
-          'Formado en 42 School, he desarrollado una comprensión real de lo que ocurre bajo las abstracciones (memoria, concurrencia, red), y me preocupo por escribir código correcto, no solo funcional.',
-          'Actualmente profundizando mi stack backend con Java y Spring Boot.',
+          'Disfruto resolviendo problemas y construyendo software que sea práctico y bien diseñado.',
+          'Con una formación en Filosofía y Sociología, abordo los desafíos descomponiéndolos y buscando soluciones claras y robustas. En 42 School, desarrollé una base sólida en informática que me permite trabajar con confianza en distintas áreas del desarrollo de software, desde la lógica de aplicación hasta los fundamentos del sistema.',
+          'Como desarrollador junior, me mueve más la curiosidad que un stack específico. Me gusta aprender nuevas tecnologías, colaborar con otros y convertir ideas en software fiable y fácil de mantener.',
         ],
       },
       skills: {
