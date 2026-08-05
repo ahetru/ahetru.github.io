@@ -52,8 +52,10 @@ export function Header() {
           </ul>
         </nav>
 
-        <LanguageSwitcher />
-        <ThemeToggle />
+        <div className="header__controls">
+          <LanguageSwitcher />
+          <ThemeToggle />
+        </div>
 
         <button
           type="button"
