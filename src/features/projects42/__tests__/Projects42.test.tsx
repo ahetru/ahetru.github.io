@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach } from 'vitest'
-import { render, cleanup } from '@testing-library/react'
+import { render, cleanup, fireEvent } from '@testing-library/react'
 import { Projects42 } from '@/features/projects42/Projects42'
 import { PROJECTS_42 } from '@/features/projects42/projects42.data'
 import { DICT } from '@/i18n/dictionary'
@@ -9,19 +9,24 @@ vi.mock('@/i18n/useDict', () => ({
   useDict: () => DICT.en,
 }))
 
+function expand(container: HTMLElement) {
+  fireEvent.click(container.querySelector('.section__title--toggle')!)
+}
+
 describe('Projects42', () => {
   afterEach(() => {
     cleanup()
   })
 
   it('renders 13 nodes matching the linked list', () => {
-    const { getAllByRole } = render(<Projects42 />)
-    const items = getAllByRole('listitem')
-    expect(items).toHaveLength(13)
+    const { container, getAllByRole } = render(<Projects42 />)
+    expand(container)
+    expect(getAllByRole('listitem')).toHaveLength(13)
   })
 
   it('renders every project name', () => {
-    const { getByLabelText } = render(<Projects42 />)
+    const { container, getByLabelText } = render(<Projects42 />)
+    expand(container)
     for (const project of PROJECTS_42) {
       expect(
         getByLabelText(
@@ -33,14 +38,16 @@ describe('Projects42', () => {
     }
   })
 
-  it('born_to_be_root (index 3 in data) is rendered without a link', () => {
-    const { getByLabelText } = render(<Projects42 />)
+  it('born_to_be_root is rendered without a link', () => {
+    const { container, getByLabelText } = render(<Projects42 />)
+    expand(container)
     const node = getByLabelText('born_to_be_root — pas de dépôt')
     expect(node.tagName).not.toBe('A')
   })
 
   it('all other projects link to a GitHub HTTPS URL', () => {
-    const { getByLabelText } = render(<Projects42 />)
+    const { container, getByLabelText } = render(<Projects42 />)
+    expand(container)
     for (const project of PROJECTS_42) {
       if (!project.github) continue
       const node = getByLabelText(`${project.name} — ${project.tags.join(', ')}`)

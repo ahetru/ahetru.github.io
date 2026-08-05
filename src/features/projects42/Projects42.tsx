@@ -11,6 +11,7 @@ export function Projects42() {
       id="projects-42"
       title={t.sections.projects42.title}
       subtitle={t.sections.projects42.subtitle}
+      collapsible
     >
       <div className="linked-list" role="list" aria-label={t.nav.projects42}>
         {PROJECTS_42.map((project, i) => (
