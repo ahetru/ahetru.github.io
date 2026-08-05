@@ -95,7 +95,7 @@ function build(): Record<Locale, Dictionary> {
         groups: [
           {
             title: 'Languages',
-            items: ['C', 'C++', 'Python', 'Java', 'Bash', 'SQL'],
+            items: ['C', 'C++', 'Python', 'Java', 'JavaScript', 'Bash', 'SQL'],
           },
           {
             title: 'Backend',
@@ -227,7 +227,7 @@ function build(): Record<Locale, Dictionary> {
         groups: [
           {
             title: 'Langages',
-            items: ['C', 'C++', 'Python', 'Java', 'Bash', 'SQL'],
+            items: ['C', 'C++', 'Python', 'Java', 'JavaScript', 'Bash', 'SQL'],
           },
           {
             title: 'Backend',
@@ -359,7 +359,7 @@ function build(): Record<Locale, Dictionary> {
         groups: [
           {
             title: 'Lenguajes',
-            items: ['C', 'C++', 'Python', 'Java', 'Bash', 'SQL'],
+            items: ['C', 'C++', 'Python', 'Java', 'JavaScript', 'Bash', 'SQL'],
           },
           {
             title: 'Backend',

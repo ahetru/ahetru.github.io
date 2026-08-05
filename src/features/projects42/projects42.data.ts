@@ -18,5 +18,5 @@ export const PROJECTS_42: Project42[] = [
   { slug: 'cub3d', name: 'cub3d', tags: ['C', 'Raycasting'], github: 'https://github.com/ahetru/cub3d' },
   { slug: 'cppmodules', name: 'cppmodules', tags: ['C++', 'OOP'], github: 'https://github.com/ahetru/cppmodules' },
   { slug: 'ft_irc', name: 'ft_irc', tags: ['C++', 'Sockets', 'IRC'], github: 'https://github.com/ahetru/ft_irc' },
-  { slug: 'ft_transcendence', name: 'ft_transcendence', tags: ['NestJS', 'Docker', 'WebSocket'], github: 'https://github.com/edouardproust/transcendence' },
+  { slug: 'ft_transcendence', name: 'ft_transcendence', tags: ['NestJS', 'JavaScript', 'Docker', 'WebSocket'], github: 'https://github.com/edouardproust/transcendence' },
 ]
