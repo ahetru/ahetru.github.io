@@ -1,19 +1,23 @@
-# Axel Hetru — Portfolio
+# Hi, I'm Axel
 
-Static portfolio website (React + Vite + TypeScript) for a junior software
-engineer, deployed to GitHub Pages from the `main` branch.
+Junior developer trained at 42 School. I enjoy solving problems and building
+software that is practical and well designed.
+
+This is my portfolio — built with React, TypeScript, and Vite. Available in
+English, French, and Spanish.
+
+## Run locally
+
+```bash
+pnpm install
+pnpm dev
+```
 
 ## Commands
 
-- `pnpm dev` — start the Vite dev server (http://localhost:5173/)
-- `pnpm build` — type-check and produce a production build in `dist/`
-- `pnpm test` — run the Vitest test suite once
-- `pnpm preview` — preview the production build locally
-- `pnpm lint` — run oxlint
-
-## Deployment
-
-GitHub Pages deployment is automated by the workflow at
-`.github/workflows/deploy.yml`: on every push to `main` it installs
-dependencies with `pnpm`, builds `dist/`, and publishes it via
-`actions/deploy-pages@v4`.
+| Command          | Description            |
+| ---------------- | ---------------------- |
+| `pnpm dev`       | Start dev server       |
+| `pnpm build`     | Production build       |
+| `pnpm test`      | Run tests              |
+| `pnpm tsc`       | Type check             |
