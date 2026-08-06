@@ -17,7 +17,7 @@ export function Footer() {
             GitHub
           </a>
           <a
-            href="https://www.linkedin.com/in/axel-hetru/"
+            href="https://www.linkedin.com/in/axel-hetru-2580b02ab/"
             className="footer__link"
             target="_blank"
             rel="noreferrer noopener"
