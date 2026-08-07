@@ -142,5 +142,4 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 
-# opencode agent / config — local only, never committed
-.opencode/
+# opencode agent / config (runtime dependencies ignored via .opencode/.gitignore)
