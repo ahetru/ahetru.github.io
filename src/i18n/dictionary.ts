@@ -42,7 +42,7 @@ function build(): Record<Locale, Dictionary> {
     en: {
       pageTitle: 'Axel Hetru — Junior Developer',
       pageDescription:
-        'Portfolio of Axel Hetru, junior backend developer trained at 42 School. C, C++, Java, Spring Boot.',
+        'Portfolio of Axel Hetru, junior software developer focused on backend systems and trained at 42 Barcelona.',
       nav: {
         hero: 'About',
         skills: 'Skills',
@@ -55,9 +55,9 @@ function build(): Record<Locale, Dictionary> {
         role: 'Junior Developer',
         location: 'Barcelona, Spain',
         paragraphs: [
-          'I enjoy solving problems and building software that is both practical and well designed.',
-          'Coming from a background in Philosophy and Sociology, I naturally approach challenges by breaking them down and looking for clear, robust solutions. At 42 School, I developed a solid computer science foundation that allows me to work confidently across different areas of software development, from application logic to system fundamentals.',
-          "As a junior developer, I'm driven by curiosity more than by a specific stack. I like learning new technologies, collaborating with others, and turning ideas into reliable, maintainable software.",
+          'Junior software developer with an analytical background in Philosophy and Sociology, trained at 42 Barcelona.',
+          'I understand what happens beneath the abstractions — memory, concurrency, networking — giving me a solid foundation across the stack and the adaptability to pick up new languages fast.',
+          'I use AI coding agents (GitHub Copilot, Claude Code) to speed up my workflow, always reviewing generated code for correctness.',
         ],
         ctaProjects: 'View my projects',
       },
@@ -178,7 +178,7 @@ function build(): Record<Locale, Dictionary> {
     fr: {
       pageTitle: 'Axel Hetru — Développeur Backend Junior',
       pageDescription:
-        "Portfolio d'Axel Hetru, développeur backend junior formé à 42 School. C, C++, Java, Spring Boot.",
+        "Portfolio d'Axel Hetru, développeur logiciel junior orienté systèmes backend et formé à 42 Barcelona.",
       nav: {
         hero: 'À propos',
         skills: 'Compétences',
@@ -191,9 +191,9 @@ function build(): Record<Locale, Dictionary> {
         role: 'Junior Developer',
         location: 'Barcelone, Espagne',
         paragraphs: [
-          "J'aime résoudre des problèmes et construire des logiciels à la fois pratiques et bien conçus.",
-          "Issu d'une formation en Philosophie et Sociologie, j'aborde naturellement les défis en les décomposant et en cherchant des solutions claires et robustes. À 42 School, j'ai acquis de solides bases en informatique qui me permettent de travailler avec confiance sur différents aspects du développement logiciel, de la logique applicative aux fondamentaux système.",
-          "En tant que développeur junior, je suis davantage guidé par la curiosité que par une stack spécifique. J'aime apprendre de nouvelles technologies, collaborer avec les autres et transformer des idées en logiciels fiables et maintenables.",
+          "Développeur logiciel junior avec un parcours analytique en Philosophie et Sociologie, formé à 42 Barcelona.",
+          "Je comprends ce qui se passe sous les abstractions — mémoire, concurrence, réseau — ce qui me donne une base solide sur toute la stack et une forte capacité d'adaptation à de nouveaux langages.",
+          "J'utilise des agents de code IA (GitHub Copilot, Claude Code) pour accélérer mon workflow, tout en relisant systématiquement le code généré pour garantir sa correction.",
         ],
         ctaProjects: 'Voir mes projets',
       },
@@ -314,7 +314,7 @@ function build(): Record<Locale, Dictionary> {
     es: {
       pageTitle: 'Axel Hetru — Desarrollador Backend Junior',
       pageDescription:
-        'Portfolio de Axel Hetru, desarrollador backend junior formado en 42 School. C, C++, Java, Spring Boot.',
+        'Portfolio de Axel Hetru, desarrollador de software junior orientado a sistemas backend y formado en 42 Barcelona.',
       nav: {
         hero: 'Sobre mí',
         skills: 'Habilidades',
@@ -327,9 +327,9 @@ function build(): Record<Locale, Dictionary> {
         role: 'Junior Developer',
         location: 'Barcelona, España',
         paragraphs: [
-          'Disfruto resolviendo problemas y construyendo software que sea práctico y bien diseñado.',
-          'Con una formación en Filosofía y Sociología, abordo los desafíos descomponiéndolos y buscando soluciones claras y robustas. En 42 School, desarrollé una base sólida en informática que me permite trabajar con confianza en distintas áreas del desarrollo de software, desde la lógica de aplicación hasta los fundamentos del sistema.',
-          'Como desarrollador junior, me mueve más la curiosidad que un stack específico. Me gusta aprender nuevas tecnologías, colaborar con otros y convertir ideas en software fiable y fácil de mantener.',
+          'Desarrollador de software junior con formación analítica en Filosofía y Sociología, formado en 42 Barcelona.',
+          'Entiendo lo que sucede por debajo de las abstracciones — memoria, concurrencia, redes — lo que me da una base sólida en toda la stack y la capacidad de adaptarme rápido a nuevos lenguajes.',
+          'Uso agentes de código con IA (GitHub Copilot, Claude Code) para acelerar mi flujo de trabajo, revisando siempre el código generado para asegurar su corrección.',
         ],
         ctaProjects: 'Ver mis proyectos',
       },
