@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Axel Hetru — Développeur logiciel</title>
+  <meta name="description" content="Axel Hetru, développeur logiciel formé à 42 Barcelona. Une sélection de projets en C, C++, TypeScript et PHP.">
+  <link rel="canonical" href="https://ahetru.github.io/fr/">
+  <link rel="alternate" hreflang="en" href="https://ahetru.github.io/en/">
+  <link rel="alternate" hreflang="fr" href="https://ahetru.github.io/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://ahetru.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Axel Hetru — Développeur logiciel">
+  <meta property="og:description" content="Axel Hetru, développeur logiciel formé à 42 Barcelona. Une sélection de projets en C, C++, TypeScript et PHP.">
+  <meta property="og:url" content="https://ahetru.github.io/fr/">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&display=swap">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="top">
+      <ul class="lang" aria-label="Langue">
+        <li><a href="/en/" lang="en" data-lang="en">EN</a></li>
+        <li><a href="/fr/" aria-current="page" lang="fr" data-lang="fr">FR</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h1>Axel Hetru</h1>
+        <p class="role">Développeur logiciel · Barcelone</p>
+        <p>
+          J'ai terminé le Common Core de 42 Barcelona, où j'ai appris à programmer en partant
+          des bases, en C et en C++. J'aime résoudre des problèmes concrets par
+          la programmation.
+        </p>
+        <ul class="links">
+          <li><a href="https://github.com/ahetru">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/axel-hetru-2580b02ab/">LinkedIn</a></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="projects">
+        <h2 id="projects">Projets</h2>
+
+        <article class="project">
+          <h3><a href="https://github.com/edouardproust/transcendence">ft_transcendence</a></h3>
+          <p class="meta">2026 · 42 Barcelona · équipe de 4</p>
+          <p>
+            Une plateforme d'échecs en ligne, projet final du Common Core de 42. J'étais chargé du
+            backend du jeu : le module de parties et son API REST, puis la couche temps réel en
+            WebSocket (connexions authentifiées, coups, propositions de nulle, abandon,
+            reconnexion après une coupure).
+          </p>
+          <p>
+            J'ai déplacé la pendule côté serveur pour que les deux joueurs voient toujours le même
+            temps, ajouté un statut «&nbsp;en ligne&nbsp;» qui reste juste avec plusieurs onglets ouverts, et
+            implémenté un classement Elo.
+          </p>
+          <p class="stack">TypeScript · NestJS · WebSocket · Prisma · Docker</p>
+          <p><a href="https://github.com/edouardproust/transcendence/pulls?q=is%3Apr+author%3Aahetru">Mes pull requests</a></p>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://sortirabcn.com/">Sortir à BCN</a></h3>
+          <p class="meta">2026 · réalisé seul pour la compagnie de théâtre Gâchette sensible</p>
+          <p>
+            Un agenda des événements francophones à Barcelone : cinéma, théâtre, concerts,
+            rencontres, sorties pour enfants. On peut parcourir les événements par jour ou par
+            rubrique, et les organisateurs proposent les leurs via un formulaire, relu avant
+            publication.
+          </p>
+          <p class="stack">PHP · SQLite · HTML · CSS · JavaScript</p>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://github.com/ahetru/ft_irc">ft_irc</a></h3>
+          <p class="meta">2026 · 42 Barcelona</p>
+          <p>
+            Un serveur IRC qui gère de nombreux clients à la fois sur un seul thread, grâce à des
+            sockets non bloquantes et à <code>poll()</code>. Il prend en charge les canaux, les
+            droits d'opérateur et les commandes standard de la RFC 1459, et fonctionne avec des
+            clients IRC existants.
+          </p>
+          <p class="stack">C++ · sockets · poll</p>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://github.com/ahetru/minishell">minishell</a></h3>
+          <p class="meta">2025 · 42 Barcelona</p>
+          <p>
+            Un shell Unix inspiré de bash : analyse lexicale et syntaxique, pipes, redirections,
+            heredocs, variables d'environnement, signaux et commandes intégrées, avec une gestion
+            rigoureuse de la mémoire et des descripteurs de fichiers.
+          </p>
+          <p class="stack">C · processus Unix</p>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://github.com/ahetru/philosophers">philosophers</a></h3>
+          <p class="meta">2025 · 42 Barcelona</p>
+          <p>
+            Le problème du dîner des philosophes : chaque philosophe est un thread, et les
+            fourchettes sont des ressources partagées protégées par des mutex. Tout l'enjeu est
+            d'éviter les interblocages et les accès concurrents tout en détectant la mort d'un
+            philosophe en moins de 10 millisecondes.
+          </p>
+          <p class="stack">C · threads POSIX · mutex</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span data-year>2026</span> Axel Hetru</p>
+    </footer>
+  </div>
+</body>
+</html>
